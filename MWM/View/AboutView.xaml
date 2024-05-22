@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Lumi.MWM.View.AboutView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Lumi.MWM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="#383e42">
+    <StackPanel>
+        <Border Background="#22202f"
+                CornerRadius="50"
+                Margin="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="650" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="400" />
+                </Grid.RowDefinitions>
+                <TextBlock Text="About Lumi"
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="20,20,0,0"/>
+
+                <TextBlock Text="Lumi is a company that allows lamp 
+manufacturers to sell their &#x0a;products and make them more 
+accessible to people.&#x0a;&#x0a;Here you can find every kind of 
+lamp that may peak your interest.&#x0a;&#x0a;
+Manufacturers that we work with include: Ideal lux, Maytoni, Perenz 
+&#x0a;and many more.&#x0a;&#x0a;These high quality Italian brands provide 
+the best products to &#x0a;light up your world!"
+                   Foreground="White"
+                   FontSize="18"
+                   HorizontalAlignment="Left"
+                   Margin="30,70,0,0"/>
+            </Grid>
+        </Border>
+    </StackPanel>
+</UserControl>

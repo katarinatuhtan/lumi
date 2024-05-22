@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Administrator\Desktop\faks\2. godina\3. semsetar\OP\Lumi\Lumi\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="MWM\View\AboutView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\CeilingView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\ChildrenView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\FloorView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\InputView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\ManufacturersView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\OutdoorView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\PictureView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\ProductsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\SuspensionView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\TableView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MWM\View\WallView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\AboutView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\CeilingView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\ChildrenView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\FloorView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\InputView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\ManufacturersView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\OutdoorView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\PictureView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\ProductsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\SuspensionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\TableView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MWM\View\WallView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\MenuButtonTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\TextBoxTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

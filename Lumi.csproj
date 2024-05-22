@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Lumiere_transparent.png" />
+    <None Remove="MWM\View\Icons\ceiling.png" />
+    <None Remove="MWM\View\Icons\children.png" />
+    <None Remove="MWM\View\Icons\floor.png" />
+    <None Remove="MWM\View\Icons\outdoor.png" />
+    <None Remove="MWM\View\Icons\picture.png" />
+    <None Remove="MWM\View\Icons\suspension.png" />
+    <None Remove="MWM\View\Icons\table.png" />
+    <None Remove="MWM\View\Icons\wall.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Lumiere_transparent.png" />
+    <Resource Include="MWM\View\Icons\picture.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.4" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1661.34" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MWM\View\Icons\ceiling.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="MWM\View\Icons\children.png" />
+    <Resource Include="MWM\View\Icons\floor.png" />
+    <Resource Include="MWM\View\Icons\outdoor.png" />
+    <Resource Include="MWM\View\Icons\suspension.png" />
+    <Resource Include="MWM\View\Icons\table.png" />
+    <Resource Include="MWM\View\Icons\wall.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MWM\View\txt\" />
+  </ItemGroup>
+
+</Project>

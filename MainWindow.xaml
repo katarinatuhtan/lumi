@@ -1,0 +1,129 @@
+﻿<Window x:Class="Lumi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:Lumi.MWM.ViewModel"
+        mc:Ignorable="d"
+        Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel />
+    </Window.DataContext>
+    
+    <Border Background=" #383e42"
+            CornerRadius="20">
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0"
+                    Grid.Column="2"
+                    Content="X"
+                    Width="30" Height="30"
+                    BorderBrush="{x:Null}"
+                    Click="CloseButton_Click">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="#910000" />
+                        <Setter Property="Foreground" Value="#ffffff" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#590000" />
+                                <Setter Property="Foreground" Value="#ffffff" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Lumi"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="35"
+                       Margin="20,0,0,0" 
+                       FontStyle="Italic"
+                       FontWeight="DemiBold"/>
+
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <RadioButton Content="Home"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding HomeViewCommand}" />
+
+                <RadioButton Content="About"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding AboutViewCommand}" />
+
+                <RadioButton Content="Products"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}" 
+                             Command="{Binding ProductsViewCommand}" />
+
+                <RadioButton Content="Manufacturers"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}" 
+                             Command="{Binding ManufacturersViewCommand}" />
+
+                <Image Source="Images/Lumiere_transparent.png"
+                       Height="250"
+                       Margin="0,60,0,0"/>
+            </StackPanel>
+
+            <TextBox Grid.Row="0" Width="250"
+                     Height="50"
+                     VerticalContentAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Margin="5"
+                     Grid.Column="1"
+                     Style="{StaticResource ModernTextbox}" />
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}" />
+
+        </Grid>
+
+    </Border>
+</Window>

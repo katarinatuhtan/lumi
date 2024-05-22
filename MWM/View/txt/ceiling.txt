@@ -1,0 +1,11 @@
+Name: Hash
+CatalogueID:  PRZ6880BCT
+Category:  ceiling
+Manufacturer: Perenz
+Description: H:450, L:280
+
+Name: Frame
+CatalogueID:  IDL255019
+Category:  ceiling
+Manufacturer: IDeal lux
+Description: H:500, L:300
